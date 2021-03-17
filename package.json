@@ -10,7 +10,7 @@
     "assemblyscript": "^0.18.15"
   },
   "name": "as-querystring",
-  "description": "**Parse URL Querys In AssemblyScript**",
+  "description": "Parse URL Querys In AssemblyScript",
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
