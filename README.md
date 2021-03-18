@@ -17,10 +17,16 @@
 import { qs } from 'as-querystring'
 
 const query = qs('https://example.com?username=JohnDoe&password=thesecretorange')
-//=> [['username', 'JohnDoe'], ['password', 'thesecretorange']]
+//=> Map {[['username', 'JohnDoe'], ['password', 'thesecretorange']]}
+
+query.get('username')
+// JohnDoe
+
+query.get('password')
+// thesecretorange
 ```
 
 ## API
 
-### qs(url: string) -->> Array<Array<string>>
+### qs(url: string) -->> Map<string, string>
 Parse a URL and output the queries
